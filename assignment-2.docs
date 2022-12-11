@@ -1,0 +1,114 @@
+1.What are the two values of the Boolean data type? How do you write them?
+Sol:     Boolean have two values: True and False
+        ex:
+            a = True
+            while(True):
+            print("ineuron")
+
+2. What are the three different types of Boolean operators?
+sol: AND, OR and NOT are the three basic Boolean operators
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+sol:    A       B       A and B     A or B      not(A)
+        True    True    True         True        False
+        True    False   False        True        False
+        False   True    False        True        True
+        False   False   False        False       True
+
+4. What are the values of the following expressions?
+sol:
+    (5 > 4) and (3 == 5)        => False
+    not (5 > 4)                => False
+    (5 > 4) or (3 == 5)         => True
+    not ((5 > 4) or (3 == 5))   => False
+    (True and True) and (True == False)  =>  False
+    (not False) or (not True)   => True
+
+
+5. What are the six comparison operators?
+sol:    1. ==   Equal 
+        2. !=   Not equal
+        3. >    Greater than
+        4. <    Less than
+        5. >=   Greater than or equal to
+        6. <=   Less than or equal to
+
+6. How do you tell the difference between the equal to and assignment operators ? Describe a
+condition and when you would use one.
+sol:    "==" is an equal to operator, it checks wether the two given operands are equal or not
+        "=" is an assignment operator, it's used to assign a values
+
+        when we want to assign a value we use assignment operator
+        ex: a=10, here 10 is assigned to the varable A
+
+        when we want to check one value with another we use equal to operator
+        ex: 2 == 2
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+    print('eggs')
+if spam > 5:
+    print('bacon')
+else:
+    print('ham')
+    print('spam')
+    print('spam')
+
+sol:
+    spam = 0
+    if spam == 10:
+        #BLOCK 1
+        print('eggs')
+    if spam > 5:
+        #BLOCK 2
+        print('bacon')
+    else:
+        #BLOCK 3
+        print('ham')
+        print('spam')
+        print('spam')
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints
+Greetings! if anything else is stored in spam.
+sol:
+    spam = 1
+    if spam == 1:
+        print("Hello")
+    elif spam == 2:
+        print("Howdy")
+    else:
+        print("Greetings")
+
+
+9.If your programme is stuck in an endless loop, what keys you'll press?
+sol: ctrl+c
+
+10. How can you tell the difference between break and continue?
+sol:    break:  break keyword terminates the excecution of the current loop 
+        continue:   continue keyword, it will skips the current iteration and excecutes the very next iteration in the loop
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+sol:    range(10) :      range(stop), 10 is the stop argument, it will iterate the for loop from 0 to 9.
+        range(0, 10):    range(start, stop), 0 - start value, 10 - stop value, it will also iterate the for loop from 0 to 9.
+        range(0, 10, 1): range(start, stop, step),  0 - start value, 10 - stop value, 1 - step
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent
+program that prints the numbers 1 to 10 using a while loop.
+sol:
+    for i in range(1,11):
+        print(i)
+
+    num=1
+    while(num<=10):
+        print(num)
+        num+=1
+
+13. If you had a function named bacon() inside a module named spam, how would you call it after
+importing spam?
+sol:    
+    from spam import *
+    bacon()
